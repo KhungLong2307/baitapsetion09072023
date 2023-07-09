@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table-test02</title>
+    <style>
+        body{
+            width: 400px;
+        }
+        table{
+            border: 0px solid #312F2F;
+            border-collapse: collapse;
+            background-color: #312F2F;
+            color: rgba(255, 166, 0, 0.945);
+        }
+        th,td{
+            padding: 10px;
+        }
+        td{
+            margin-left: 30px;
+        }
+        .hs1{
+            text-align: right;
+        }
+        select{
+            margin-left: 5px;
+        }
+        .hs2{
+            margin: 0 0 0 60px;
+        }
+        p{
+            background-color: rgba(255, 166, 0, 0.884);
+            width: 325.242px;
+            padding: 20px 20px 20px 20px;
+            margin: 0px;
+        }
+        .tb02{
+            background-color: rgba(255, 166, 0, 0.884);
+            border: 0px solid rgba(255, 166, 0, 0.884);;
+        }
+        .btn01,.btn02{
+            padding: 7px 10px 7px 10px; 
+            margin: 0px 10px;
+            color: white;
+            border: 0px solid;
+        }
+        .btn01{
+            background-color: rgba(21, 184, 57, 0.986);
+        }
+        .btn02{
+            background-color: rgba(255, 0, 0, 0.986);
+        }
+    </style>
+</head>
+<body>
+    <p>Sign Up</p>
+    <table border="1">
+        <form>
+            <tr>
+                <td class="hs1">First Name</td>
+                <td><input type="text" placeholder="Enter First Name"></td>
+            </tr>
+            <tr>
+                <td class="hs1">Last Name</td>
+                <td><input type="text" placeholder="Enter Last Name"></td>
+            </tr>
+            <tr>
+                <td class="hs1">Date of birth</td>
+                <td>
+                <select>
+                    <option value="Date">Date</option>
+                </select>
+                <select>
+                    <option value="Month">Month</option>
+                </select>
+                <select>
+                    <option value="Year">Year</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="hs1">Gender</td>
+                <td>
+                    <input type="radio" id="Male" name="gender">
+                    <label for="Male">Male</label>
+                    <input type="radio" id="Female" name="gender">
+                    <label for="Female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="hs1">Country</td>
+                <td>
+                    <select>
+                        <option value="Country">Country</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="hs1">Email</td>
+                <td><input type="email" placeholder="Enter Email" pattern=""></td>
+            </tr>
+            <tr>
+                <td class="hs1">Phone</td>
+                <td><input type="text" placeholder="Enter Phone" pattern="[0-9]"></td>
+            </tr>
+            <tr>
+                <td class="hs1">Password</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td class="hs1">Confirm Password</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox">
+                    <label for="Rule">I Agree to The Terms of use</label></td>
+            </tr>
+            <tr class="tb02">
+                <td></td>
+                <td><button class="btn01">Submit</button>
+                    <button class="btn02">Cancel</button></td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>
